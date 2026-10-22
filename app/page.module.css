@@ -1,0 +1,38 @@
+.main {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.recipes {
+  margin-top: 32px;
+}
+
+.title {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 92%;
+    padding: 24px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
