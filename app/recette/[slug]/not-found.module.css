@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("/images//banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 10px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 50px 5%;
+}
+.logo img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.code {
+  color: #ffd15b;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.title {
+  font-size: clamp(25px, 6vw, 45px);
+  color: #ffffff;
+  margin-top: -2rem;
+}

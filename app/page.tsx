@@ -3,6 +3,7 @@ import RecipeCard from "@/components/RecipeCard/RecipeCard";
 import recipesData from "@/data/recipes.json";
 import TagFilters from "@/components/TagFilters/TagFilters";
 import styles from "./page.module.css";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   const recipes = recipesData;
@@ -23,6 +24,8 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
