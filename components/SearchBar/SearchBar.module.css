@@ -1,0 +1,105 @@
+.searchSection {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.searchBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  padding: 25px 110px 25px 25px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input:focus-visible {
+  border-color: #9356dc;
+  outline: 2px solid rgb(147 86 220 / 20%);
+}
+
+.input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.searchActions {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clearButton {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #666666;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.clearButton:hover {
+  background-color: #eeeeee;
+  color: #1b1b1b;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button img {
+  display: block;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  transition: filter 180ms ease;
+}
+
+button:hover img {
+  content: url("/images/loop-hover.png");
+}
+
+@media (max-width: 800px) {
+  .searchBar {
+    width: 100%;
+  }
+
+  .input {
+    padding: 18px 100px 18px 14px;
+    font-size: 14px;
+  }
+
+  .searchActions {
+    right: 8px;
+    gap: 4px;
+  }
+
+  .button img {
+    width: 34px;
+    height: 34px;
+  }
+}

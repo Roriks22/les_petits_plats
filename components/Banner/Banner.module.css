@@ -1,0 +1,68 @@
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 667px;
+  padding: 50px 5%;
+  background-image: url("/images//banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-self: flex-start;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin: auto 0;
+}
+
+.title {
+  margin: 0;
+  color: #ffd15b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(26px, 3.1vw, 44px);
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .banner {
+    min-height: 500px;
+    padding: 28px 20px;
+  }
+
+  .heroContent {
+    gap: 24px;
+  }
+
+  .title {
+    font-size: clamp(22px, 5vw, 32px);
+  }
+
+  .title br {
+    display: none;
+  }
+}
