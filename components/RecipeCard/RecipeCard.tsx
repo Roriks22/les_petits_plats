@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./RecipeCard.module.css";
 import Image from "next/image";
 
@@ -31,13 +32,18 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
   return (
     <article className={styles.card}>
       <div className={styles.imageContainer}>
-        <Image
-          src={imageSrc}
-          alt={recipe.name}
-          className={styles.image}
-          width={500}
-          height={300}
-        />
+        <Link
+          href={`/recette/${recipe.slug}`}
+          aria-label={`Voir la recette ${recipe.name}`}
+        >
+          <Image
+            src={imageSrc}
+            alt={recipe.name}
+            className={styles.image}
+            width={500}
+            height={300}
+          />
+        </Link>
         <span className={styles.time}>{recipe.time} min</span>
       </div>
       <div className={styles.content}>
@@ -54,9 +60,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                 item.quantity !== "" && (
                   <span>
                     {item.quantity}
-                    {(item.unit ?? item.unit)
-                      ? ` ${item.unit ?? item.unit}`
-                      : ""}
+                    {item.unit ? ` ${item.unit}` : ""}
                   </span>
                 )}
             </li>
