@@ -12,7 +12,7 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
   const showClearButton = value.trim().length >= 3;
 
   return (
-    <section className={styles.searchSection}>
+    <div className={styles.searchSection}>
       <form
         className={styles.searchBar}
         onSubmit={(event) => event.preventDefault()}
@@ -49,6 +49,6 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
           </button>
         </div>
       </form>
-    </section>
+    </div>
   );
 }
