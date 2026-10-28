@@ -39,16 +39,12 @@
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 700;
-  font-style: bold;
-  letter-spacing: 9%;
   line-height: 100%;
 }
 .description {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
   line-height: 1.2;
   font-weight: 400;
   font-size: 14px;
